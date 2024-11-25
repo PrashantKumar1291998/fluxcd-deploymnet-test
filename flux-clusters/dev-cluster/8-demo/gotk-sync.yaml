@@ -9,7 +9,9 @@ spec:
   interval: 1m0s
   ref:
     branch: 8-demo
-  url: https://github.com/PrashantKumar1291998/flux-app.git
+  secretRef:
+    name: 8-demo
+  url: ssh://git@github.com/PrashantKumar1291998/flux-app.git
 ---
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
